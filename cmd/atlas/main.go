@@ -1,4 +1,4 @@
-package atlas
+package main
 
 import (
 	"github.com/linc593823915/atlas/internal/app"
