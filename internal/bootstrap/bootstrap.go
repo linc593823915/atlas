@@ -10,22 +10,23 @@ import (
 
 type Bootstrap struct {
 	config  *config.Config
-	logger  *logger.Logger
 	runtime *runtime.Runtime
 	ctx     context.Context
 }
 
 func New(ctx context.Context) (*Bootstrap, error) {
+	er := logger.WithOptions(logger.LevelInfo, logger.FormatText)
+	if er != nil {
+		return nil, er
+	}
 	configInstance, err := config.LoadConfig()
 	if err != nil {
 		return nil, err
 	}
-	loggerInstance := logger.InitLogger()
 	runtimeInstance := runtime.CreateRuntime()
 	return &Bootstrap{
 		ctx:     ctx,
 		config:  configInstance,
-		logger:  loggerInstance,
 		runtime: runtimeInstance,
 	}, nil
 }

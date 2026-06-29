@@ -1,11 +1,21 @@
 package logger
 
-import "log/slog"
+import (
+	"context"
+	"log/slog"
+)
 
-type Logger struct {
-	*slog.Logger
+func Info(ctx context.Context, msg string, fields ...any) {
+	slog.InfoContext(ctx, msg, fields...)
 }
 
-func InitLogger() *Logger {
-	return &Logger{}
+func Error(ctx context.Context, msg string, fields ...any) {
+	slog.ErrorContext(ctx, msg, fields...)
+}
+
+func Debug(ctx context.Context, msg string, fields ...any) {
+	slog.DebugContext(ctx, msg, fields...)
+}
+func Warn(ctx context.Context, msg string, fields ...any) {
+	slog.WarnContext(ctx, msg, fields...)
 }
