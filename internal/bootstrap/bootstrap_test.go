@@ -1,9 +1,12 @@
 package bootstrap
 
-import "testing"
+import (
+	"context"
+	"testing"
+)
 
 func TestNewBootstrap(t *testing.T) {
-	bootstrap, err := New()
+	bootstrap, err := New(context.Background())
 	if err != nil {
 		t.Fatal(err)
 	}
