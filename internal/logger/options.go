@@ -2,6 +2,7 @@ package logger
 
 import (
 	"fmt"
+	"io"
 	"log/slog"
 	"os"
 )
@@ -27,29 +28,18 @@ var defaultOptions = &options{
 }
 
 func WithOptions(level, format string) error {
-	switch level {
-	case LevelDebug:
-		slog.SetLogLoggerLevel(slog.LevelDebug)
-	case LevelInfo:
-		slog.SetLogLoggerLevel(slog.LevelInfo)
-	case LevelWarn:
-		slog.SetLogLoggerLevel(slog.LevelWarn)
-	case LevelError:
-		slog.SetLogLoggerLevel(slog.LevelError)
-	default:
-		return fmt.Errorf("invalid level: %s", level)
-
+	logLevel, err := parseLevel(level)
+	if err != nil {
+		return err
 	}
-
-	switch format {
-	case FormatJson:
-		setLogJsonFormat()
-	case FormatText:
-		setLogTextFormat()
-	default:
-		return fmt.Errorf("invalid format: %s", format)
+	if err := setLogLevel(logLevel); err != nil {
+		return err
 	}
-
+	handler, err := newHandler(format, os.Stdout, logLevel)
+	if err != nil {
+		return err
+	}
+	slog.SetDefault(slog.New(handler))
 	defaultOptions = &options{
 		level:  level,
 		format: format,
@@ -57,16 +47,40 @@ func WithOptions(level, format string) error {
 	return nil
 }
 
-func setLogTextFormat() {
-	slog.SetDefault(slog.New(slog.NewTextHandler(
-		os.Stdout, &slog.HandlerOptions{
-			AddSource: true,
-		})))
+func parseLevel(level string) (slog.Level, error) {
+	switch level {
+	case LevelDebug:
+		return slog.LevelDebug, nil
+	case LevelInfo:
+		return slog.LevelInfo, nil
+	case LevelWarn:
+		return slog.LevelWarn, nil
+	case LevelError:
+		return slog.LevelError, nil
+	default:
+		return 0, fmt.Errorf("invalid level: %s", level)
+	}
 }
 
-func setLogJsonFormat() {
-	slog.SetDefault(slog.New(slog.NewJSONHandler(
-		os.Stdout, &slog.HandlerOptions{
-			AddSource: true,
-		})))
+func setLogLevel(level slog.Level) error {
+	slog.SetLogLoggerLevel(level)
+	return nil
+}
+
+func newHandler(format string, writer io.Writer, level slog.Level) (slog.Handler, error) {
+	switch format {
+	case FormatJson:
+		return slog.NewJSONHandler(writer, handlerOptions(level)), nil
+	case FormatText:
+		return slog.NewTextHandler(writer, handlerOptions(level)), nil
+	default:
+		return nil, fmt.Errorf("invalid format: %s", format)
+	}
+}
+
+func handlerOptions(level slog.Level) *slog.HandlerOptions {
+	return &slog.HandlerOptions{
+		AddSource: true,
+		Level:     level,
+	}
 }

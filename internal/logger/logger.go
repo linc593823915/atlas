@@ -6,16 +6,17 @@ import (
 )
 
 func Info(ctx context.Context, msg string, fields ...any) {
-	slog.InfoContext(ctx, msg, fields...)
+	emit(ctx, slog.LevelInfo, msg, fields...)
 }
 
 func Error(ctx context.Context, msg string, fields ...any) {
-	slog.ErrorContext(ctx, msg, fields...)
+	emit(ctx, slog.LevelError, msg, fields...)
 }
 
 func Debug(ctx context.Context, msg string, fields ...any) {
-	slog.DebugContext(ctx, msg, fields...)
+	emit(ctx, slog.LevelDebug, msg, fields...)
 }
+
 func Warn(ctx context.Context, msg string, fields ...any) {
-	slog.WarnContext(ctx, msg, fields...)
+	emit(ctx, slog.LevelWarn, msg, fields...)
 }

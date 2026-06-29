@@ -9,26 +9,33 @@ import (
 )
 
 type Bootstrap struct {
-	config  *config.Config
+	config  *config.Manager
 	runtime *runtime.Runtime
 	ctx     context.Context
 }
 
 func New(ctx context.Context) (*Bootstrap, error) {
-	er := logger.WithOptions(logger.LevelInfo, logger.FormatText)
-	if er != nil {
-		return nil, er
-	}
-	configInstance, err := config.LoadConfig()
+	configManager, err := buildConfigManager()
 	if err != nil {
 		return nil, err
 	}
 	runtimeInstance := runtime.CreateRuntime()
 	return &Bootstrap{
 		ctx:     ctx,
-		config:  configInstance,
+		config:  configManager,
 		runtime: runtimeInstance,
 	}, nil
+}
+
+func buildConfigManager() (*config.Manager, error) {
+	manager := config.NewManager()
+	if err := manager.Load(); err != nil {
+		return nil, err
+	}
+	if err := logger.WithOptions(manager.Logger().Level, manager.Logger().Format); err != nil {
+		return nil, err
+	}
+	return manager, nil
 }
 
 func (b *Bootstrap) Start() error {
