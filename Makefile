@@ -35,6 +35,9 @@ ops-evidence:
 ops-evidence-json:
 	go run ./scripts/programops evidence --json
 
+cookbook-pdf:
+	go run ./scripts/cookbookpdf
+
 fmt:
 	go fmt ./...
 
