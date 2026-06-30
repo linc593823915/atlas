@@ -1,12 +1,9 @@
-# Atlas Agent Guide
+# Atlas AI Rules
 
-## Coding Conventions
-
-Atlas permanently follows the Rule of 30.
-
-- Any source file over 300 lines must be split.
-- Any function over 30 lines must be split.
-- Any struct with over 20 fields must be redesigned.
-
-Run `go run ./scripts/ruleof30` before finishing code changes. `make test`
-already includes this check.
+- Never bypass internal/logger.
+- Never access os.Getenv directly.
+- Use internal/config.
+- 所有文档必须使用中文撰写。
+- Every issue must follow this sequence with no exceptions:
+  RFC -> Interface -> Implementation -> Unit Test -> Review -> Benchmark (when necessary) -> Documentation -> Memory.
+- Update .memory after each issue.

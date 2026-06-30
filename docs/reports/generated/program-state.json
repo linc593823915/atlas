@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-06-30",
+  "months": [
+    {
+      "month": "01",
+      "generated_at": "2026-06-30",
+      "theme": "Backend foundation and service skeleton.",
+      "objective": "Build a clean backend base for Atlas with bootstrap, config, logger, database wiring, Docker, and CI.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M01-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "02",
+      "generated_at": "2026-06-30",
+      "theme": "Background execution and failure handling.",
+      "objective": "Build dependable worker execution with retries, timeouts, idempotency, and operational drills.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M02-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "03",
+      "generated_at": "2026-06-30",
+      "theme": "Single-agent service and tool use.",
+      "objective": "Ship the first reliable Atlas agent using Responses API, structured outputs, and tool orchestration.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M03-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "04",
+      "generated_at": "2026-06-30",
+      "theme": "Tool gateway and interface quality.",
+      "objective": "Standardize tool registration, schemas, validation, and audit-aware execution paths.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M04-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "05",
+      "generated_at": "2026-06-30",
+      "theme": "Mcp protocol engineering.",
+      "objective": "Expose Atlas capabilities through a stable MCP surface with clear contracts and compatibility rules.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M05-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "06",
+      "generated_at": "2026-06-30",
+      "theme": "Multi-agent runtime and approvals.",
+      "objective": "Add specialist agents, handoffs, approvals, and traceable runtime orchestration.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M06-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "07",
+      "generated_at": "2026-06-30",
+      "theme": "Durable workflow and memory boundaries.",
+      "objective": "Build pause, resume, checkpoint, and intervention mechanics for long-running Atlas workflows.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M07-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "08",
+      "generated_at": "2026-06-30",
+      "theme": "Evals, traces, and release gates.",
+      "objective": "Turn Atlas quality into measurable traces, graders, datasets, and regression decisions.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M08-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "09",
+      "generated_at": "2026-06-30",
+      "theme": "Governance, safety, and audit.",
+      "objective": "Add policy controls, threat modeling, misuse defenses, and auditable sensitive actions.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M09-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "10",
+      "generated_at": "2026-06-30",
+      "theme": "Production deployment and slo operations.",
+      "objective": "Deploy Atlas into a production-like Kubernetes model with health checks, alerts, and rollback readiness.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M10-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "11",
+      "generated_at": "2026-06-30",
+      "theme": "Benchmarking, optimization, and capacity planning.",
+      "objective": "Measure latency, throughput, token cost, and capacity, then improve Atlas using evidence.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M11-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    },
+    {
+      "month": "12",
+      "generated_at": "2026-06-30",
+      "theme": "Atlas platform integration and graduation defense.",
+      "objective": "Integrate subsystems into a platform-level architecture and defend it with docs, tests, and benchmarks.",
+      "total_issues": 5,
+      "status_counts": {
+        "planned": 5
+      },
+      "risk_counts": {
+        "medium": 5
+      },
+      "missing_target_week": 5,
+      "missing_start_date": 5,
+      "missing_finish_date": 5,
+      "linked_evidence_issues": 0,
+      "missing_evidence_issues": 5,
+      "highest_risk_issue": "ATLAS-M12-01",
+      "highest_risk_level": "medium",
+      "completion_rate": "0/5",
+      "validation_coverage": "0/5",
+      "evidence_completeness": "0/5",
+      "milestone_status": "planned",
+      "pace_assessment": "not started",
+      "biggest_risk": "missing target week metadata"
+    }
+  ],
+  "quarters": [
+    {
+      "quarter": "Q1",
+      "generated_at": "2026-06-30",
+      "theme": "Foundation and first agent.",
+      "objective": "Develop software engineering foundations and deliver the first reliable single-agent Atlas service.",
+      "total_issues": 15,
+      "status_counts": {
+        "planned": 15
+      },
+      "missing_target_week": 15,
+      "completion_trend": "M01 0/5, M02 0/5, M03 0/5",
+      "blocked_trend": "M01 0 blocked, M02 0 blocked, M03 0 blocked",
+      "validation_trend": "M01 0/5, M02 0/5, M03 0/5",
+      "quarter_status": "in progress",
+      "biggest_risk": "missing target week metadata across issue cards"
+    },
+    {
+      "quarter": "Q2",
+      "generated_at": "2026-06-30",
+      "theme": "Interfaces, mcp, and agent runtime.",
+      "objective": "Move from single workflows to reusable interfaces, protocols, and orchestrated agents.",
+      "total_issues": 15,
+      "status_counts": {
+        "planned": 15
+      },
+      "missing_target_week": 15,
+      "completion_trend": "M04 0/5, M05 0/5, M06 0/5",
+      "blocked_trend": "M04 0 blocked, M05 0 blocked, M06 0 blocked",
+      "validation_trend": "M04 0/5, M05 0/5, M06 0/5",
+      "quarter_status": "in progress",
+      "biggest_risk": "missing target week metadata across issue cards"
+    },
+    {
+      "quarter": "Q3",
+      "generated_at": "2026-06-30",
+      "theme": "Durable execution, evals, and governance.",
+      "objective": "Make Atlas stateful, measurable, and governed before it reaches production-grade operations.",
+      "total_issues": 15,
+      "status_counts": {
+        "planned": 15
+      },
+      "missing_target_week": 15,
+      "completion_trend": "M07 0/5, M08 0/5, M09 0/5",
+      "blocked_trend": "M07 0 blocked, M08 0 blocked, M09 0 blocked",
+      "validation_trend": "M07 0/5, M08 0/5, M09 0/5",
+      "quarter_status": "in progress",
+      "biggest_risk": "missing target week metadata across issue cards"
+    },
+    {
+      "quarter": "Q4",
+      "generated_at": "2026-06-30",
+      "theme": "Production operations and platform integration.",
+      "objective": "Deploy, benchmark, integrate, and defend Atlas as an internal agent platform.",
+      "total_issues": 15,
+      "status_counts": {
+        "planned": 15
+      },
+      "missing_target_week": 15,
+      "completion_trend": "M10 0/5, M11 0/5, M12 0/5",
+      "blocked_trend": "M10 0 blocked, M11 0 blocked, M12 0 blocked",
+      "validation_trend": "M10 0/5, M11 0/5, M12 0/5",
+      "quarter_status": "in progress",
+      "biggest_risk": "missing target week metadata across issue cards"
+    }
+  ]
+}

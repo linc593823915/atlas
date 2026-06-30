@@ -1,0 +1,69 @@
+# Week 43
+
+Last updated: 2026-06-29
+
+Semester: [Semester 4](../semesters/semester-4.md)
+Quarter: [Quarter 4](../quarters/quarter-4.md)
+Month: [Month 10](../months/month-10.md)
+Day range: Day 295-Day 301
+
+## Theme
+
+Benchmark rfc.
+
+## Google-Style Competency Focus
+
+- Production Ownership
+- SLO Thinking
+- Rollback Readiness
+
+## Read
+
+- Benchmark design notes
+- OpenAI production best practices
+
+## Lab
+
+- Define latency, throughput, and token-cost measurement rules.
+
+## Project
+
+- Write the RFC for Atlas benchmark and capacity work.
+
+## Source Reading
+
+- Read Atlas agent workflow hot paths and cache opportunities.
+
+## Deliverables
+
+- Approved benchmark RFC and measurement contract.
+
+## Weekly Assessment Standard
+
+- Score out of 100.
+- Deliverable completion: 25 points.
+- Technical clarity and trade-off explanation: 20 points.
+- Code health, tests, or validation depth: 15 points.
+- Reliability and edge-case thinking: 15 points.
+- Documentation and review quality: 10 points.
+- Reflection, memory, and next-step quality: 15 points.
+- Passing bar: 75+ and every planned weekly artifact exists.
+- Strong bar: 90+ with evidence that the work improves Atlas beyond the minimal scope.
+
+## Interview Questions
+
+1. System design: how would you design a production-ready Benchmark rfc capability inside Atlas?
+2. Implementation: if you had to build write the rfc for atlas benchmark and capacity work., what abstractions or data flows matter most?
+3. Testing and reliability: what is the highest-risk failure case hidden inside approved benchmark rfc and measurement contract.?
+4. Code health: how would you review a change for Benchmark rfc using design, simplicity, tests, and documentation criteria?
+5. Behavioral: where would you deliberately trade polish for forward progress in Benchmark rfc, and why?
+
+## Daily Links
+
+- [Day 295](../days/day-295.md): scope and reading
+- [Day 296](../days/day-296.md): rfc and interface work
+- [Day 297](../days/day-297.md): implementation core
+- [Day 298](../days/day-298.md): implementation extension
+- [Day 299](../days/day-299.md): tests and lab validation
+- [Day 300](../days/day-300.md): documentation and review
+- [Day 301](../days/day-301.md): retrospective and memory
